@@ -14,6 +14,7 @@ fetch('attractions.json')
                 return a.Visitors - b.Visitors;
             });
             let data = attractions.reverse().slice(0,5);
+            console.log(data);
             renderBarChart(data);
         }
         else {
@@ -22,6 +23,7 @@ fetch('attractions.json')
                 return a.Visitors - b.Visitors;
             });
             let data = filteredAttractions.reverse().slice(0,5);
+            console.log(data);
             renderBarChart(data);
         }
     }
